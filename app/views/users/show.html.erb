@@ -1,0 +1,27 @@
+<p>
+  <strong>First Name:</strong>
+  <%= @user.first_name %>
+</p>
+ 
+<p>
+  <strong>Last Name:</strong>
+  <%= @user.last_name %>
+</p>
+<p>
+  <strong>Userame:</strong>
+  <%= @user.uname %>
+</p>
+<p>
+  <strong>image:</strong>
+  <%= @user.image %>
+</p>
+<p>
+  <strong>email:</strong>
+  <%= @user.email %>
+</p>
+
+<%= link_to "friends",users_path %>
+<%= link_to "logout",users_path(@user) %>
+
+
+

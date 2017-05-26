@@ -1,0 +1,12 @@
+<h1>User list</h1>
+
+     <% @users.each do |user| %>
+     <tr>
+     	<td><%= user.uname %></td>
+     	<%= link_to "Add friend",friendships_path(:friend_id) %>
+     </tr>
+     <% end %>
+
+     <%= link_to "SignUp",new_user_path(@user) %>
+     <%= link_to "Signin",new_session_path(:user_id) %>
+    
